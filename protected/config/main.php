@@ -5,7 +5,13 @@
 
 // This is the main Web application configuration. Any writable
 // CWebApplication properties can be configured here.
-return array(
+
+// В этом файле определён массив $personal с персональными настройками сервера:
+// Строка соединения с БД, пароли админки и т.д.
+$personal = array(); // Это на тот случай если в файле не определена переменная $personal
+include 'personal.php';
+
+return CMap::mergeArray(array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'My Web Application',
 
@@ -87,4 +93,4 @@ return array(
 		// this is used in contact page
 		'adminEmail'=>'webmaster@example.com',
 	),
-);
+), $personal);

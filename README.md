@@ -1,4 +1,4 @@
 kcc
 ===
 
-Kherson Christian Church site
+Сайт Церкви христиан г. Херсона

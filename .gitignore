@@ -12,3 +12,5 @@ nbproject/private/private.xml
 nbproject/project.properties
 
 nbproject/project.xml
+
+protected/config/personal.php
